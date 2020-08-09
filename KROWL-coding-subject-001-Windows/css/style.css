@@ -1,0 +1,170 @@
+/* ---------------------------
+taiheiのポートフォリオ３作目
+KROWLさんのコーディング課題★１に挑戦しました。
+サイトのURLはこちら↓
+https://krowl.jp/academy/subject/coding/detail/1
+PC版は割とスムーズに模写できたけど、レスポンシブはかなり雑ですｗ
+次は★2にも挑戦してみます。
+2020/08/09
+-------------------------------------------------------- */
+
+@charset "UTF-8";
+
+/* --------------------------------
+共通
+-------------------------------- */
+body {
+    font-family: '游明朝',Meiryo,sans-serif;
+    line-height:1.5;
+    color:#707070;   
+}
+
+img {
+    max-width: 100%;
+    vertical-align:bottom;
+}
+
+
+/* --------------------------------
+header
+-------------------------------- */
+header {
+    background:#5A442A;
+    height:80px;
+    margin:0 auto;
+}
+
+header h1 {
+    color:#fff;
+    line-height:80px;
+    padding:0 20px;
+    font-size:20px;
+}
+
+header h1 span {
+    font-size: 32px;
+}
+
+/* --------------------------------
+fv
+-------------------------------- */
+.fv{
+    background-image:url(../images/main_visual.jpg);
+    background-size:cover;
+    background-position: center center;
+    margin:0 auto;
+    height:400px;
+}
+
+/* --------------------------------
+main
+-------------------------------- */
+.main {
+    padding:0 20px;
+    width:960px;
+    margin:0 auto;
+}
+
+.main-top-title {
+    font-size: 24px;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+.main-top-title span {
+    font-size: 36px;
+}
+
+.main-item-wrapper section{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:30px;
+}
+
+.main-pic{
+    width:calc(50% - 20px);
+
+}
+
+.main-copy{
+    /* display:flex; */
+    width:50%;
+    line-height:1.75;
+}
+
+.main-under-title{
+    font-size: 24px;
+    color:#707070;
+    text-align:center;
+    padding-bottom:50px;
+}
+
+.main-under-title a{
+    /* background:pink; */
+    border-bottom:1px solid #707070;
+
+}
+
+.main-under-title span {
+    font-size: 36px;
+}
+
+/* --------------------------------
+footer
+-------------------------------- */
+footer{
+    height:60px;
+    background:#5A442A;
+}
+
+footer p {
+    color:#fff;
+    text-align:center;
+    line-height:60px;
+}
+
+/* --------------------------------
+レスポンシブ
+-------------------------------- */
+@media (max-width: 600px){
+/* --------------------------------
+共通
+-------------------------------- */
+body {
+    padding:0 5px;
+    width:590px;
+    margin:0 auto;
+}
+
+/* --------------------------------
+header-sp
+-------------------------------- */
+
+/* --------------------------------
+main-sp
+-------------------------------- */
+.main{
+    width:590px;   
+}
+
+.main-top-title{
+    text-align:center;
+}
+
+.main-item-wrapper section{
+    display:block;
+}
+
+.main-pic{
+    width:100%;
+    margin:0 auto;
+}
+
+.main-copy{
+   
+    width:100%;
+    line-height:1.75;
+    margin:0 auto;
+}
+
+}
